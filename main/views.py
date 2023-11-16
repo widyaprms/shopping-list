@@ -172,7 +172,7 @@ def create_product_flutter(request):
     else:
         return JsonResponse({"status": "error"}, status=401)
     
-
+    
 
 @csrf_exempt
 def logout(request):

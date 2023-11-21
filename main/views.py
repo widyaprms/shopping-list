@@ -21,6 +21,7 @@ from django.contrib.auth import logout as auth_logout
 # Create your views here.
 
 
+
 @login_required(login_url='/login')
 
 def show_main(request):

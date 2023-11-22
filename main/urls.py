@@ -9,7 +9,7 @@ from main.views import login_user
 from main.views import logout_user
 from main.views import edit_product
 from main.views import delete_product
-from main.views import get_product_json, add_product_ajax, create_product_flutter
+from main.views import get_product_json, add_product_ajax, create_product_flutter, logout
 
 
 app_name = 'main'

@@ -16,8 +16,10 @@ import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth import logout as auth_logout
 
 # Create your views here.
+
 
 
 @login_required(login_url='/login')
@@ -170,3 +172,6 @@ def create_product_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
+    
+    
+
